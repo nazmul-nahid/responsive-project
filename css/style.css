@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: royalblue;
+    font-family: 'Lora', serif;
+
+}
+
+main{
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+section{
+    background-color: whitesmoke;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    
+}
+.section-title{
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+.top-players, .new-blogs, .courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+.top-players {
+    grid-template-columns: repeat(3, 1fr);
+}
+.new-blogs{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.player{
+    display: flex;
+    align-items: center;
+}
+.blogs{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 50px;
+    margin-right: 20px;
+}
+.thumbnail img{
+    width: 200px;
+    margin: 20px;
+}
+.filled{
+    color: goldenrod;
+    font-size: 0.8em;
+}
+.unfilled{
+    color: lightgray;
+    font-size: 0.8em;
+}
+@media (max-width:992px){
+    .top-players, .new-blogs{
+        
+    grid-template-columns: repeat(2, 1fr);
+  
+    }
+    
+}
+
+    
+
+@media (max-width:668px){
+    .top-players, .new-blogs{
+        
+    grid-template-columns: repeat(1, 1fr);
+               }
+            }
+          
+.course img{
+    
+    width: 250px;
+}          
